@@ -1,0 +1,48 @@
+#footer {
+	width: 100%;
+	height: 150px;
+	position: relative;
+	background: rgba(0, 0, 0, 0.85);
+
+	.inner {
+		width: 1200px;
+		margin: 0 auto;
+		padding: 25px 0px 20px;
+		text-align: center;
+		text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+		h1 {
+			font: bold 35px/1 "Orbitron";
+			letter-spacing: 1.3px;
+			color: #fff;
+			margin-bottom: 25px;
+		}
+
+		ul {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			li {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				width: 100%;
+
+				b {
+					font: normal 15px/1 "Orbitron";
+					letter-spacing: 1.3px;
+					color: #999;
+					margin-bottom: 10px;
+				}
+
+				address,
+				span {
+					font: bold 13px/1 "Orbitron";
+					letter-spacing: 1px;
+					color: #ccc;
+				}
+			}
+		}
+	}
+}
