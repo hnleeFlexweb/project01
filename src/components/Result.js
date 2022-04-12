@@ -37,7 +37,7 @@ export default function Result() {
         // 이미지를 이용해서 가져온 모델로 예측을 수행함 ( 두번째 인자로 flipped 여부! 안 뒤집혔으니 false)
         const prediction = await model.predict(tempImage, false);
 
-        // sort : 콜백함수 호출
+        // sort : 콜백함수 호출, 원본 배열을 정렬함
         // 데이터형 변환 : parseFloat 문자열에서 숫자를 추출
         prediction.sort((a, b) => b.probability - a.probability);
         setPredictionArr(prediction)
