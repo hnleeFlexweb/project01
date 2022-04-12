@@ -25,7 +25,7 @@
 			margin-bottom: 50px;
 		}
 
-		article {
+		.putPic {
 			text-align: center;
 			padding: 0px 30px;
 			width: 400px;
@@ -43,11 +43,11 @@
 			}
 
 			img {
-				border: 0.5px solid #111;
 				object-fit: cover;
 				width: 90%;
 				height: 90%;
 				cursor: pointer;
+				transition: 1s;
 			}
 		}
 
@@ -56,6 +56,48 @@
 			font: bold 12.5px/1 "Orbitron";
 			letter-spacing: 1.5px;
 			color: #111;
+			margin-bottom: 15px;
+		}
+
+		.wait {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				width: 100%;
+				height: 150px;
+				cursor: pointer;
+				object-fit: cover;
+			}
+		}
+
+		.resultPic {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			.resultPercent {
+				margin-bottom: 20px;
+				font: bold 20px/1 "Orbitron";
+				letter-spacing: 1px;
+				color: #333;
+			}
+
+			strong {
+				font: bold 15px/1 "Orbitron";
+				letter-spacing: 1px;
+				color: blue;
+				margin-bottom: 30px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 }
